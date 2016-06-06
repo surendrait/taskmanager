@@ -1,0 +1,17 @@
+{
+  "name": "taskmanager",
+  "description": "sample demo app",
+  "main": "index.js",
+  "authors": [
+    "Surendra"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/surendrait/taskmanager",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

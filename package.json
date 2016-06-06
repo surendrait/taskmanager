@@ -1,0 +1,19 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "description": "sample demo app ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surendrait/taskmanager.git"
+  },
+  "author": "Surendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surendrait/taskmanager/issues"
+  },
+  "homepage": "https://github.com/surendrait/taskmanager#readme"
+}
