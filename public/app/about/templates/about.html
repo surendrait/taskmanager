@@ -1,0 +1,22 @@
+<div class="container" ng-controller="AboutController as about">
+	<h1>{{title}}</h1>
+	{{about.info}}
+	<p ng-click="list(data)">list  technologies goes here</p>
+ 	<hr>
+	<table class="table table-striped" ng-repeat="item in data">
+	<thead>
+      <tr>
+        <th>Name</th>
+        <th>Website</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr>
+        <td>{{item.name}}</td>
+        <td>{{item.website}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="blog">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog Demo</title>
+	 <link rel="icon" href="favicon.ico" type="image/x-icon">
+  	 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- Support libs -->
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+	<!-- custom css -->
+	<link rel="stylesheet" href="css/blog.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+	  <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="#/">Home</a>
+    <!--       <a class="blog-nav-item" href="#">New features</a>
+          <a class="blog-nav-item" href="#">Press</a>
+          <a class="blog-nav-item" href="#">New hires</a> -->
+          <a class="blog-nav-item" href="#/about">About</a>
+          <a class="blog-nav-item" href="#/login">Login</a>
+        </nav>
+      </div>
+    </div>
+
+
+  <div class="container">
+    <div ng-view></div>
+  </div>
+
+
+	<!-- custom: JS -->
+	<script src="js/main.js"></script>
+
+	<!-- Support libs -->
+	<script src="libs/jquery/dist/jquery.js"></script>
+	<script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="libs/angular/angular.js"></script>
+  <script src="libs/angular-route/angular-route.js"></script>
+
+	<!-- Application Code -->
+	<script src="app/app.js"></script>
+  <script src="app/config/config.js"></script>
+	<script src="app/controller/MainCtrl.js"></script>
+  <!-- about -->
+  <script src="app/about/about.app.js"></script>
+  <script src="app/about/controller/AboutCtrl.js"></script>
+  <script src="app/about/services/AboutServices.js"></script>
+  <!-- login -->
+  <script src="app/login/login.app.js"></script>
+  <script src="app/login/controller/LoginCtrl.js"></script>
+
+
+
+</body>
+</html>

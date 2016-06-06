@@ -1,17 +1,24 @@
 {
   "name": "taskmanager",
   "version": "1.0.0",
-  "description": "sample demo app ",
+  "description": "sample demo project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "node server.js"
   },
+  "author": "surendra",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/surendrait/taskmanager.git"
   },
-  "author": "Surendra",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/surendrait/taskmanager/issues"
   },

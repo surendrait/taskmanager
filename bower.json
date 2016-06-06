@@ -1,17 +1,26 @@
 {
   "name": "taskmanager",
-  "description": "sample demo app",
-  "main": "index.js",
   "authors": [
-    "Surendra"
+    "surendra"
   ],
-  "license": "ISC",
+  "description": "sample demo project",
+  "main": "",
+  "license": "MIT",
   "homepage": "https://github.com/surendrait/taskmanager",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
+    "public/libs",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular": "^1.5.6",
+    "bootstrap": "^3.3.6",
+    "angular-ui-router": "^0.3.1",
+    "AngularJS-Toaster": "angularjs-toaster#^2.0.0",
+    "angular-animate": "^1.5.6",
+    "angular-route": "^1.5.6"
+  }
 }
