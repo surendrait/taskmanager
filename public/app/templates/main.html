@@ -1,31 +1,69 @@
+<!-- menu -->
 
-	<div class="container">
+<div ng-controller="MainController as vm">
+<div class="blog-masthead">
+  <div class="container">
+    <nav class="blog-nav">
+      <a class="blog-nav-item active" href="#/user">User</a>
+      <a class="blog-nav-item" href="#/notifcation">Notifcation <span class="badge">10</span></a>
+       <a class="blog-nav-item " href="#/dashboard">Log Out</a>
+    </nav>
+  </div>
+</div>
+<div class="container">
 
- 	<div ng-controller="MainController as vm">
- 		<h1>{{vm.title}}</h1>
- 	</div>
+	
+		<h1>{{vm.title}}</h1>
+		<h4>{{vm.taskname}}</h4>
+		<!-- blogpost form -->
 
- 	<div>
- 		
- 		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur minus et nam, fugiat dicta quo quasi mollitia eveniet in itaque! Iusto eaque quos, quo minima fugit suscipit sapiente velit provident.</div>
- 		<div>Culpa repellat vero, sit, asperiores laboriosam rem porro commodi incidunt nesciunt esse cupiditate reiciendis numquam, nam aperiam doloribus quidem dolor. Debitis itaque in qui nam distinctio. A aliquid debitis autem.</div>
- 		<div>Consequuntur, ipsum. Dolore, illum aspernatur porro, repellendus modi asperiores ut ducimus ullam, dolores expedita cupiditate facere, perspiciatis velit tempora recusandae rem cum deserunt nisi maiores nesciunt! Itaque adipisci harum nostrum.</div>
- 		<div>Officiis laudantium ea aut asperiores ab harum esse facilis laboriosam quis eum dicta ipsam tempora molestiae quas animi eos, recusandae quam minima eveniet doloremque numquam minus suscipit. Consequatur, deserunt, quasi.</div>
- 		<div>Magnam quae consequatur voluptatum, ratione laboriosam sint libero iste nihil officiis suscipit harum sequi doloremque ad, molestias, reprehenderit inventore. Eligendi consequuntur quibusdam voluptatum in dolorem repellat repellendus et eaque, facere.</div>
- 		<div>Magnam culpa nisi porro tenetur nostrum maxime itaque amet id magni inventore nesciunt, ducimus voluptatibus molestiae dolorum excepturi doloribus, vitae, deserunt hic fuga? Enim cumque nostrum possimus, modi, quidem fugiat.</div>
- 		<div>Dolorum, pariatur dolorem laborum, odit odio aperiam distinctio blanditiis totam non quas numquam debitis harum eaque neque consequuntur libero. Alias odit aliquam enim, mollitia. Voluptas quidem odio repudiandae, et voluptates.</div>
- 		<div>Eos ducimus pariatur a quas deserunt ipsam accusamus sint quasi ad consequatur natus sit, laboriosam nihil excepturi magnam officia explicabo magni eaque fuga optio. Porro magni, dignissimos a voluptates reprehenderit?</div>
- 		<div>Minima incidunt explicabo aliquam maxime saepe quam porro, sunt voluptatum pariatur, perferendis veniam ab inventore impedit eius nobis aut enim magni asperiores. Maiores ullam aliquam enim labore, quaerat laboriosam placeat.</div>
- 		<div>Eaque laudantium delectus ipsam recusandae magnam tempore rerum. Earum repellat labore provident quos aperiam incidunt itaque tempora velit ex corporis distinctio porro dolorum, adipisci natus architecto odit modi. Maiores, quibusdam?</div>
- 	</div>
+	<ng-form class="form-horizontal" role="form">
+	    <div class="form-group">
+	      <label class="control-label col-sm-2 " for="">{{vm.id}}:</label>
+	      <div class="col-sm-10">
+	        <input type="text" class="form-control" id="" placeholder="" ng-model="id">
+	      </div>
+	    </div>
 
- 	 <footer class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="#">@mdo</a>.</p>
-      <p>Blog Code  built for <a href="http://angularjs.org">Angular</a> by @{{vm.version}}</p>
-      <p>
-        <a href="#">Back to top</a>
-        
-      </p>
-    </footer>
+	    <div class="form-group">
+	      <label class="control-label col-sm-2 text-left" for="">{{vm.owener}}:</label>
+	      <div class="col-sm-10">
+	        <input type="text" class="form-control" id="" placeholder="" ng-model="owener">
+	      </div>
+	    </div>
 
- 	</div>
+	    <div class="form-group">
+	      <label class="control-label col-sm-2" for="">{{vm.description}}:</label>
+	      <div class="col-sm-10">
+	        <input type="text" class="form-control" id="" placeholder="" ng-model="description">
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+	      <label class="control-label col-sm-2" for="">{{vm.dependancy}}:</label>
+	      <div class="col-sm-10">
+	        <input type="text" class="form-control" id="" placeholder="" ng-model="dependancy">
+	      </div>
+	    </div>
+	    <div class="form-group">
+	      <label class="control-label col-sm-2" for="">{{vm.due}}:</label>
+	      <div class="col-sm-10">
+	        <input type="text" class="form-control" id="" placeholder="" ng-model="due">
+	      </div>
+	    </div>
+
+	    <div class="form-group">        
+	      <div class="col-sm-offset-2 col-sm-10">
+	        <button type="submit" class="btn btn-default" ng-click="vm.addTask()">Submit</button>
+	      </div>
+	    </div>
+  	</ng-form>
+
+	</div>
+</div>
+
+
+
+<hr>
+<p><strong>Info:</strong> User should POST the tasks</p>
+

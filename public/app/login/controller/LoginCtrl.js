@@ -2,14 +2,25 @@
 	'use strict';
 
 	angular
-	  .module('login.app')
+	  .module('app.login')
 	  .controller('LoginController', LoginController);
 
-	LoginController.$inject = ['$log'];
+	LoginController.$inject = ['LoginFactory'];
 
-	function LoginController($log) {
+	function LoginController(LoginFactory) {
 		//content
+		//console.log(LoginFactory)
 		var vm=this;
-		vm.title="Login page"
+		vm.title="Please sign in"
+		vm.user="User Name";
+		vm.password="Password"
+		vm.getAuth=function(user){
+			//console.log("getAuth" +user)
+			if(user==="user"){
+				console.log("valide user")
+			}else{
+				console.log("not valide user")
+			}
+		}
 	}
 })();

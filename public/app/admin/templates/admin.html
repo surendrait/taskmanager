@@ -1,0 +1,80 @@
+<!-- css -->
+<link rel="stylesheet" href="css/admin.css">
+<!-- menu -->
+ <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="#/admin">Admin</a>
+          <a class="blog-nav-item" href="#/dashboard">Log Out</a>
+        </nav>
+      </div>
+  </div>
+
+<div class="container" ng-controller="AdminController as vm">
+
+	<h3>Welcome to {{vm.name}}</h3>
+	<h4>{{vm.title}}</h4>
+
+	<div class="row">
+        <div class="col-md-4 finished">
+        	<p>TASK </p>
+        	
+        	<button type="button" class="btn btn-warning">Dependency</button> 
+        </div>
+
+        <div class="col-md-4 active">	
+        	<p>TASK</p>
+        	
+        	<button type="button" class="btn btn-success">Approved</button> 
+        </div>
+
+        <div class="col-md-4 error">
+        	<p>TASK</p>
+        	
+        	<button type="button" class="btn btn-danger">Pending</button> 
+        </div>
+      </div>
+
+      	<div class="row">
+        <div class="col-md-4 active">
+        	<p>TASK</p>
+        	
+        	<button type="button" class="btn btn-success">Approved</button> 
+        </div>
+        
+        <div class="col-md-4 finished">	
+        	<p>TASK</p>
+        	
+        	<button type="button" class="btn btn-warning">Dependency</button> 
+        </div>
+
+        <div class="col-md-4 error">
+        	<p>TASK</p>
+        	
+        	<button type="button" class="btn btn-danger">Pending</button> 
+        </div>
+      </div>
+      	<div class="row">
+        <div class="col-md-4 error">
+        	<p>TASK</p>
+        	
+        	<button type="button" class="btn btn-danger">Pending</button> 
+        </div>
+        
+        <div class="col-md-4 active">	
+        	<p>TASK</p>
+        
+        	<button type="button" class="btn btn-success">Approved</button> 
+        </div>
+
+        <div class="col-md-4 finished">
+        	<p>TASK</p>
+        
+        	<button type="button" class="btn btn-warning">Dependency</button> 
+        </div>
+      </div>
+
+      
+</div>
+<hr>
+<p><strong>Info:</strong> Admin should complete /Approve the tasks</p>

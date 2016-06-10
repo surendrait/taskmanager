@@ -1,4 +1,19 @@
+<link rel="stylesheet" href="css/login.css">
 <div class="container" ng-controller="LoginController as vm">
-	<h1>login page</h1>
-	{{vm.title}}
+<!-- form -->
+
+  <form class="form-signin">
+    <h2 class="form-signin-heading">  {{vm.title}}</h2>
+    <label for="inputEmail" class="sr-only">{{vm.user}}</label>
+
+    <input type="text"  class="form-control" placeholder="Enter User"  autofocus ng-model="user">
+
+    <label for="inputPassword" class="sr-only">{{vm.password}}</label>
+    
+    <input type="password" class="form-control" placeholder="Password" ng-model="password">
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="vm.getAuth(user)">Sign in</button>
+  </form>
+
+	
 </div>

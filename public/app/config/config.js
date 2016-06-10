@@ -13,21 +13,26 @@
 		$logProvider.debugEnabled(true);
 
 		$routeProvider
-		.when('/', {
+		.when('/user', {
 			templateUrl: 'app/templates/main.html',
 			controller: 'MainController',
 			controllerAs:'vm'
-		})
-		.when('/about', {
-			templateUrl: 'app/about/templates/about.html',
-			controller: 'AboutController',
-			controllerAs:'about'
 		})
 		.when('/login', {
 			templateUrl: 'app/login/templates/login.html',
 			controller: 'LoginController',
 			controllerAs:'vm'
 		})
-		.otherwise({ redirectTo: '/login' })
+		.when('/admin', {
+			templateUrl: 'app/admin/templates/admin.html',
+			controller: 'AdminController',
+			controllerAs:'vm'
+		})
+		.when('/dashboard', {
+			templateUrl: 'app/dashboard/templates/dashboard.html',
+			controller: 'DashboardController',
+			controllerAs:'vm'
+		})
+		.otherwise({ redirectTo: '/dashboard' })
 	}
 })();

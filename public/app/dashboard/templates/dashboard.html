@@ -1,0 +1,90 @@
+<!-- css -->
+<link rel="stylesheet" href="css/admin.css">
+<!-- menu -->
+ <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+         <a class="blog-nav-item active" href="#/dashboard">Dashboard</a>
+           <a class="blog-nav-item" href="#/login">Login</a>
+
+        </nav>
+      </div>
+  </div>
+<div>
+	
+	<div class="container" ng-controller="DashboardController as vm">
+		
+        <h3>{{vm.welcome}}</h3>
+
+        <!-- refresh -->
+        <button ng-click="vm.refresh()">click</button>
+
+		<!-- list of  task -->
+		<div class="row">
+        <div class="col-md-4 active">
+        	<p>TASK</p>
+        	<hr>
+        	DONE
+        </div>
+
+        <div class="col-md-4 error">	
+        	<p>TASK</p>
+        	<hr>
+        	DONE
+        </div>
+
+        <div class="col-md-4 active">
+        	<p>TASK</p>
+        	<hr>
+        	DONE
+        </div>
+      </div>
+
+      	<div class="row">
+        <div class="col-md-4 error">
+        	<p>TASK</p>
+        	<hr>
+        	DONE
+        </div>
+        
+        <div class="col-md-4 active">	
+        	<p>TASK</p>
+        	<hr>
+        	DONE
+        </div>
+
+        <div class="col-md-4 active">
+        	<p>TASK</p>
+        	<hr>
+        	DONE
+        </div>
+      </div>
+      	<div class="row">
+        <div class="col-md-4 active">
+        	<p>TASK</p>
+        	<hr>
+        	DONE
+        </div>
+        
+        <div class="col-md-4 active">	
+        	<p>TASK</p>
+        	<hr>
+        	DONE
+        </div>
+
+        <div class="col-md-4 finished">
+        	<p>TASK</p>
+        	<hr>
+        	DONE
+        </div>
+        
+      </div>
+	</div>
+
+   
+</div>
+
+<hr>
+<p><strong>Info:</strong>  Active tasks  {Green Color}</p>
+<p><strong>Info:</strong>  Inactive tasks {Red Color}</p>
+<p><strong>info:de</strong>Dependency tasks {yellw Color}</p>

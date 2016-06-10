@@ -14,7 +14,11 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-sourcemaps": "^1.6.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/surendrait/taskmanager.git"

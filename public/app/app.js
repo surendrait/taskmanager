@@ -3,8 +3,12 @@
 
 	angular
 	  .module('blog', [
+	  	'ngAnimate',
 	  	'ngRoute',
-	  	'app.about',
-	  	'login.app'
+	  	'toaster',
+	  	'app.login',
+	  	'app.admin',
+	  	'app.dashboard'
+	  
 	 ]);
 })();
